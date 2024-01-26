@@ -1,7 +1,8 @@
 {
   "scripts": {
     "test": "jest --reporters=jest-junit",
-    "build": "echo \"Dummy build script for Autocode\""
+    "build": "echo \"Dummy build script for Autocode\"",
+    "sassing": "sass --watch src/styles/style.scss src/dist/style.css"
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",
@@ -16,5 +17,8 @@
     "suiteName": "junit test results",
     "outputDirectory": ".",
     "outputName": "junit.xml"
+  },
+  "dependencies": {
+    "sass": "^1.69.6"
   }
 }
