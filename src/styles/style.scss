@@ -11,7 +11,7 @@ body {
 $header-font: "Source Sans 3", sans-serif;
 
 .header {
-  @media (min-width: 767px){
+  @media (min-width: 767px) {
     background: linear-gradient(to right, #47d0ff, #b697ff);
   }
   width: 100%;
@@ -198,11 +198,14 @@ $header-font: "Source Sans 3", sans-serif;
 .culture {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(74deg, #b798ff 9.06%, #48d1ff 88.43%);
   align-items: center;
   width: 100%;
   height: 637px;
   justify-content: space-evenly;
+  background: url("../assets/image.png");
+  background-size: cover;
+  background-position: center;
+
   &__title {
     text-align: center;
     width: 16ch;
@@ -243,105 +246,6 @@ $header-font: "Source Sans 3", sans-serif;
     font-weight: 400;
     line-height: 2rem;
     width: 50ch;
-  }
-  &__pictures {
-    position: absolute;
-    align-self: normal;
-  }
-  .picture3 {
-    margin-left: 10vw;
-    margin-top: -20rem;
-  }
-  .picture2 {
-    margin-top: 20%;
-  }
-
-  .picture1 {
-    align-self: flex-end;
-    margin-top: -20%;
-  }
-  .picture4 {
-    align-self: flex-end;
-    margin-top: 20%;
-  }
-
-  .booble2 {
-    position: absolute;
-    border-radius: 50%;
-    border: 4px solid white;
-  }
-
-  .filled {
-    background-color: #fff;
-  }
-
-  .first {
-    align-self: flex-start;
-    margin-top: -30vw;
-    margin-left: 11%;
-  }
-  .second {
-    margin-left: 6%;
-    margin-top: -13vw;
-    align-self: flex-start;
-  }
-  .third {
-    align-self: flex-start;
-    margin-left: 21%;
-  }
-
-  .fourth {
-    align-self: flex-start;
-    margin-top: 22%;
-    margin-left: 17%;
-  }
-
-  .fifth {
-    align-self: flex-start;
-    margin-top: 26%;
-    margin-left: 9%;
-  }
-
-  .sixth,
-  .seventh,
-  .eighth,
-  .nineth,
-  .tenth {
-    align-self: flex-end;
-  }
-
-  .sixth {
-    margin-right: 11%;
-    margin-top: -30vw;
-  }
-  .seventh {
-    margin-right: 22%;
-    margin-top: -25vw;
-  }
-  .eighth {
-    margin-right: 16%;
-    margin-top: -3vw;
-  }
-  .nineth {
-    margin-right: 8%;
-    margin-top: 3%;
-  }
-  .tenth {
-    margin-right: 14%;
-    margin-top: 20%;
-  }
-  &__booble--smaller {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  &__booble--middle {
-    width: 3rem;
-    height: 3rem;
-  }
-  &__booble--larger {
-    width: 4rem;
-    height: 4rem;
   }
 }
 
