@@ -4,8 +4,8 @@
  */
 
 module.exports = {
-    roots: ["./src", "./test"],
-    moduleFileExtensions: ["js", "html", "htm", "css", "scss"],
-    clearMocks: true,
-    coverageProvider: "v8",
-};
+  roots: ['./src', './test'],
+  moduleFileExtensions: ['js', 'html', 'htm', 'css', 'scss'],
+  clearMocks: true,
+  coverageProvider: 'v8',
+}
