@@ -5,15 +5,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 $header-font: "Source Sans 3", sans-serif;
 
 .header {
+  @media (min-width: 767px){
+    background: linear-gradient(to right, #47d0ff, #b697ff);
+  }
   width: 100%;
-  background: linear-gradient(to right, #47d0ff, #b697ff);
   height: 78px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   &__label {
     text-decoration: none;
     color: #fff;
@@ -22,7 +27,7 @@ $header-font: "Source Sans 3", sans-serif;
   }
 
   &__navigation {
-    width: 30%;
+    width: 40%;
   }
   &__items {
     display: flex;
@@ -75,7 +80,7 @@ $header-font: "Source Sans 3", sans-serif;
   }
 
   &__content {
-    height: 214px;
+    min-height: 214px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -88,7 +93,7 @@ $header-font: "Source Sans 3", sans-serif;
   }
   &__headline {
     @include font(3rem, 500, normal, 4.5rem, $header-font, #b896ff);
-    width: 250px;
+    max-width: 250px;
   }
 
   &__description {
@@ -99,7 +104,7 @@ $header-font: "Source Sans 3", sans-serif;
     font-weight: 400;
     line-height: 2rem;
     @include font(1.5rem, 400, normal, 2rem, $header-font, #464547);
-    width: 439px;
+    max-width: 439px;
     margin-top: 20px;
   }
 }
@@ -142,7 +147,6 @@ $header-font: "Source Sans 3", sans-serif;
 
 .main__booble-purple-filled {
   top: 0;
-  left: 0;
   height: 23px;
   width: 23px;
   background-color: #9f85dd;
@@ -156,13 +160,13 @@ $header-font: "Source Sans 3", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 732px;
+  min-height: 732px;
   justify-content: space-evenly;
   background-color: #e4eaf0;
   &__headline {
     text-align: center;
     @include font(3rem, 700, normal, 4rem, $header-font, #464547);
-    width: 680px;
+    max-width: 680px;
   }
 
   &__short-description {
@@ -205,10 +209,30 @@ $header-font: "Source Sans 3", sans-serif;
     @include font(3rem, 700, normal, normal, $header-font, #fff);
   }
   &__play {
-    border-radius: 50%;
-    border: none;
+    position: relative;
     height: 15rem;
     width: 15rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__play {
+    background-color: #b899ff;
+    display: flex;
+    cursor: pointer;
+  }
+  &__play::before {
+    content: "\25B6";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem; /* Adjust the font size for the triangle */
   }
   &__description {
     color: #fff;
@@ -361,7 +385,6 @@ $header-font: "Source Sans 3", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.1875rem; /* 118.75% */
   }
   &__email,
   &__address {
@@ -371,7 +394,6 @@ $header-font: "Source Sans 3", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.1875rem;
   }
   &__emailbar {
     display: flex;
