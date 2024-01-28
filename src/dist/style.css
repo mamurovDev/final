@@ -20,6 +20,9 @@ body {
   .header {
     background: linear-gradient(to right, #47d0ff, #b697ff);
   }
+  .header .__burger-menu {
+    display: none;
+  }
 }
 .header__label {
   text-decoration: none;
@@ -123,49 +126,6 @@ body {
 
 .booble {
   position: absolute;
-}
-
-.main__booble-blue-filled {
-  top: 0;
-  height: 42px;
-  width: 42px;
-  background-color: #49d2ff;
-  left: 0;
-  border-radius: 50%;
-  margin-top: 160px;
-  margin-left: 150px;
-}
-
-.main__booble-blue-unfilled {
-  top: 0;
-  height: 23px;
-  left: 0;
-  width: 23px;
-  border-radius: 50%;
-  border: 3px solid #49d2ff;
-  margin-top: 160px;
-  margin-left: 550px;
-}
-
-.main__booble-purple-unfilled {
-  left: 0;
-  top: 0;
-  height: 42px;
-  width: 42px;
-  border-radius: 50%;
-  border: 3px solid #9f85dd;
-  margin-top: 680px;
-  margin-left: 110px;
-}
-
-.main__booble-purple-filled {
-  top: 0;
-  height: 23px;
-  width: 23px;
-  background-color: #9f85dd;
-  border-radius: 50%;
-  margin-top: 730px;
-  margin-left: 650px;
 }
 
 .about {
