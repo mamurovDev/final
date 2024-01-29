@@ -5,12 +5,13 @@
     "compile": "sass src/styles/style.scss src/dist/style.css & sass src/styles/mobile.scss src/dist/mobile.css",
     "prod": "sass src/styles/:src/dist && postcss src/dist/style.css src/dist/mobile.css --dir src/dist/ && purgecss --css src/dist/*.css --content src/**/*.html --output src/dist/ && postcss src/dist/mobile.css src/dist/style.css --dir src/dist/ --ext .min.css",
     "format": "prettier --write \"**/*.js\"",
-    "lint" : ""
+    "lint": ""
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
     "autoprefixer": "^10.4.17",
+    "clean-css-cli": "^5.6.3",
     "cssnano": "^6.0.3",
     "html-validate": "^8.7.4",
     "jest": "29.7",
@@ -19,21 +20,20 @@
     "parse-gitignore": "^2.0.0",
     "postcss": "^8.4.33",
     "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.0.0",
     "prettier": "^3.2.4",
     "purgecss": "^5.0.0",
     "purify-css": "^1.2.5",
     "sass": "^1.70.0",
-    "stylelint": "^16.2.0"
+    "stylelint": "^16.2.0",
+    "stylelint-scss": "^6.1.0",
+    "stylint": "^2.0.0"
   },
   "dependencies": {
     "autoprefixer": "^10.4.17",
-    "cssnano": "^6.0.3",
     "node-sass": "^9.0.0",
-    "postcss": "^8.4.33",
-    "postcss-cli": "^11.0.0",
-    "prettier": "^3.2.4",
+    "prefixer": "^0.0.3",
     "purgecss": "^5.0.0",
-    "purify-css": "^1.2.5",
     "sass": "^1.70.0",
     "stylelint": "^16.2.0"
   },
