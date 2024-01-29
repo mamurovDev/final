@@ -10,11 +10,29 @@ body {
 }
 $header-font: 'Source Sans 3', sans-serif;
 
+@media (min-width: 767px){
+ .header{
+  background: linear-gradient(to right, #47d0ff, #b697ff);
+  .__burger-menu {
+    display: none;
+  }
+  &__navigation {
+    width: 60%;
+  }
+ }
+
+ .main{
+   &__left{
+    margin-left: 20px;
+   }
+ }
+}
 .header {
-  @media (min-width: 767px) {
-    background: linear-gradient(to right, #47d0ff, #b697ff);
-    .__burger-menu {
-      display: none;
+  
+
+  @media (min-width: 1000px){
+    &__navigation{
+      width: 40%;
     }
   }
   width: 100%;
@@ -27,10 +45,6 @@ $header-font: 'Source Sans 3', sans-serif;
     color: #fff;
     text-transform: uppercase;
     @include font(1.25rem, 600, normal, 1rem, $header-font, #fff);
-  }
-
-  &__navigation {
-    width: 40%;
   }
   &__items {
     display: flex;

@@ -12,7 +12,7 @@ $header-font: 'Source Sans 3', sans-serif;
   :root {
     font-size: small;
   }
-  body {
+  body, html {
     min-width: 100vw;
     overflow-x: hidden;
   }
@@ -23,7 +23,7 @@ $header-font: 'Source Sans 3', sans-serif;
       margin-left: 20px;
     }
     &__navigation {
-      order: 1;
+      // order: 1;
       display: none;
       margin: 0;
     }
@@ -103,9 +103,9 @@ $header-font: 'Source Sans 3', sans-serif;
     background-image: url('../assets/Group6.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 111% 111%;
     &__content {
-      height: 300px;
+      height: 340px!important;
     }
     &__right {
       display: none;
@@ -127,7 +127,7 @@ $header-font: 'Source Sans 3', sans-serif;
       margin: 0;
       width: 90%;
       text-align: center;
-      color: #fff;
+      color: #fff!important;
       font-size: 1.5rem;
     }
     &__box {
